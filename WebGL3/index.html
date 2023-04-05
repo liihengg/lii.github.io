@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);">
+        <canvas id="#canvas" style="width: 100%; height: 100%; cursor: default;" width="960" height="600"></canvas>
+        <div class="logo Dark" style="display: none;"></div>
+        <div class="progress Dark" style="display: none;">
+          <div class="empty" style="width: 0%;"></div>
+          <div class="full" style="width: 100%;"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">UnityWebGLTest</div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="title">UnityWebGLTest</div>
       </div>
     </div>
     <script>
