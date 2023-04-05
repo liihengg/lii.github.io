@@ -24,6 +24,15 @@
       </div>
     </div>
     <script>
+        window.onresize = adjuest;
+        function adjuest() {
+            var divCon = document.getElementById("unityContainer");
+            var canvas = document.getElementById("#canvas");
+            divCon.style.width = "100vw";
+            divCon.style.height = "100vh";
+            canvas.style.width = "100vw";
+            canvas.style.height = "100vh";
+        }
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
